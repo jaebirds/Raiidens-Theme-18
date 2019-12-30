@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<head>
+<title>{Title}</title>
+
+<!--
+ |
+ |  Theme #18 by raiidens (@ tumblr)
+ |  Published August 2016
+ |	Updated June 2019
+ |  Ver. 1.03
+ |
+ |  Edit as much as you like, but please do not
+ |  claim as your own work, and leave credit somewhere.
+ |
+ |  Credits:
+ |  Font Awesome Icons - https://fortawesome.github.io/Font-Awesome/
+ |  Fonts for Web - http://fontsforweb.com/
+ |  Google Fonts - https://www.google.com/fonts
+ |  IcoMoon - https://icomoon.io/
+ |  jQuery - https://jquery.com/
+ |  jQuery UI - https://jqueryui.com/
+ |  Lazy Load - http://www.appelsiini.net/projects/lazyload
+ |  PXU Photoset Extended - https://github.com/PixelUnion/Extended-Tumblr-Photoset
+ |
+ |  ! IMPORTANT !
+ |  - make sure you have "custom" selected on the sidebar background dropdown in the options if you want to upload one
+ |  - ctrl+f "move pokemon below" to find where you can do that
+ |  - everything else is found in the options before
+ |
+ -->
+
+<meta name="if:500px posts" content="0">
+<meta name="if:400px posts" content="1">
+<meta name="if:250px posts" content="0">
+<meta name="if:Enable front Pokemon info" content="1">
+<meta name="if:Enable back Pokemon info" content="1">
+<meta name="if:Always show tags" content="1">
+<meta name="if:Lazy load images" content="1">
+<meta name="if:Fade in images on load" content="0">
+<meta name="if:Show captions" content="1">
+<meta name="if:Black and white images" content="0">
+<meta name="if:Color images on hover" content="0">
+<meta name="if:Inverted tumblr buttons" content="1">
+
+
+<meta name="image:Background" content="">
+<meta name="image:Custom sidebar bg" content="https://static.tumblr.com/o4povtk/P4Goc6r5m/th18a.jpg">
+<meta name="image:Front pokemon" content="https://static.tumblr.com/o4povtk/KPvocccnn/charmander.gif">
+<meta name="image:Back pokemon" content="https://static.tumblr.com/o4povtk/b45occco2/pikachu.gif">
+
+<meta name="text:Front pokemon name" content="CHARMANDER">
+<meta name="text:Front pokemon level" content="5">
+<meta name="text:Front pokemon health" content="50">
+<meta name="text:Back pokemon name" content="PIKACHU">
+<meta name="text:Back pokemon level" content="10">
+
+<meta name="select:Sidebar bg" content="0" title="Custom">
+<meta name="select:Sidebar bg" content="1" title="Field">
+<meta name="select:Sidebar bg" content="2" title="Water">
+<meta name="select:Sidebar bg" content="3" title="Barren">
+<meta name="select:Sidebar bg" content="4" title="Grassy">
+<meta name="select:Sidebar bg" content="5" title="Cave">
+<meta name="select:Sidebar bg" content="6" title="Sand">
+<meta name="select:Sidebar bg" content="7" title="Gym">
+
+<meta name="color:Background" content="#EEEEEE">
+<meta name="color:Scrollbar" content="#333333">
+<meta name="color:Tooltip background" content="#FFFFFF">
+<meta name="color:Tooltip text" content="#333333">
+<meta name="color:Tooltip border" content="#333333">
+<meta name="color:Text highlight" content="#666666">
+<meta name="color:Text highlight background" content="#D1D1D1">
+<meta name="color:Blockquote" content="#666666">
+
+<meta name="color:Sidebar border" content="#333333">
+<meta name="color:Description border 1" content="gray">
+<meta name="color:Description border 2" content="#DDDDDD">
+<meta name="color:Description background" content="#555555">
+<meta name="color:Description text" content="#FFFFFF">
+<meta name="color:Description scrollbar" content="#CCCCCC">
+<meta name="color:Link hover cursor" content="#000000">
+<meta name="color:Main nav border" content="#66B3FF">
+<meta name="color:Main nav background" content="#FFFFFF">
+<meta name="color:Main nav link" content="#333333">
+<meta name="color:Main nav link hover" content="#333333">
+<meta name="color:Nav border" content="#0080FF">
+<meta name="color:Nav background" content="#FFFFFF">
+<meta name="color:Nav link" content="#333333">
+<meta name="color:Nav link hover" content="#333333">
+
+<meta name="color:Content scrollbar" content="gray">
+<meta name="color:Post text" content="#333333">
+<meta name="color:Post bold text" content="#333333">
+<meta name="color:Post italic text" content="#333333">
+<meta name="color:Post border" content="#333333">
+<meta name="color:Post background" content="#FFFFFF">
+<meta name="color:Post link" content="#AAAAAA">
+<meta name="color:Post link hover" content="#000000">
+<meta name="color:Post title" content="#333333">
+<meta name="color:Post title link" content="#333333">
+<meta name="color:Asker name" content="#666666">
+<meta name="color:Question text" content="#666666">
+<meta name="color:Answer text" content="#666666">
+<meta name="color:Answer background" content="#EEEEEE">
+<meta name="color:Post info" content="#333333">
+<meta name="color:Post info tags" content="#AAAAAA">
+<meta name="color:Post info tags hover" content="#000000">
+<meta name="color:Post info bar" content="#333333">
+<meta name="color:Reblog and like buttons" content="#333333">
+
+<meta name="color:Pagination" content="#333333">
+<meta name="color:Pagination hover" content="#333333">
+
+<meta name="text:Post border radius" content="3">
+<meta name="text:Link 1 Title" content="Link 1">
+<meta name="text:Link 1 URL" content="">
+<meta name="text:Link 2 Title" content="Link 2">
+<meta name="text:Link 2 URL" content="">
+<meta name="text:Link 3 Title" content="Link 3">
+<meta name="text:Link 3 URL" content="">
+<meta name="text:Link 4 Title" content="Link 4">
+<meta name="text:Link 4 URL" content="">
+<meta name="text:Link 5 Title" content="Link 5">
+<meta name="text:Link 5 URL" content="">
+<meta name="text:Link 6 Title" content="Link 6">
+<meta name="text:Link 6 URL" content="">
+<meta name="text:Link 7 Title" content="Link 7">
+<meta name="text:Link 7 URL" content="">
+<meta name="text:Link 8 Title" content="Link 8">
+<meta name="text:Link 8 URL" content="">
+
+<meta name="font:Tooltip font" content="'PokemonGB', 'Press Start 2P', cursive !important">
+<meta name="font:Post font" content="'PokemonGB', 'Press Start 2P', cursive !important">
+<meta name="font:Post info font" content="'PokemonGB', 'Press Start 2P', cursive !important">
+<meta name="font:Blog title font" content="'PokemonGB', 'Press Start 2P', cursive !important">
+<meta name="font:Description font" content="'PokemonGB', 'Press Start 2P', cursive !important">
+<meta name="font:Nav link font" content="'PokemonGB', 'Press Start 2P', cursive !important">
+<meta name="font:Post title font" content="'PokemonGB', 'Press Start 2P', cursive !important">
+
+<link href="//fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+<link href='//fontsforweb.com/font/getcss?id=63205&apikey=66ef4844200128ce2ddb801c917ddb8a' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+
+<link href="//code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+<link href="//static.tumblr.com/qudkd6d/OcDnl99gb/style.css" rel="stylesheet" type="text/css"/>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="//static.tumblr.com/qudkd6d/Az6nkemqr/pxuphotoset.min.js"></script>
+
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+<style type="text/css">
+
+.tooltiptheme {
+    border-radius: 5px;
+    border: 0.5px solid {color:Tooltip border};
+    background: {color:Tooltip background};
+    color: {color:Tooltip text};
+    font-family: {font:Tooltip font};
+    font-size: 5pt;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: {color:Scrollbar};
+    border: solid 4px {color:Background};
+}
+::-webkit-scrollbar-thumb {
+    height: 12px;
+    border: solid 2px {color:Background};
+    background-color: {color:Scrollbar};
+}
+
+.tmblr-iframe {
+    top: 3px !important;
+    right: 3px !important;
+    position: fixed !important;
+    z-index: 999999 !important;
+    white-space: nowrap;
+    opacity: 0.7;
+    {block:IfInvertedTumblrButtons}
+    -webkit-filter: invert(100%);
+    -moz-filter: invert(100%);
+    -o-filter: invert(100%);
+    -ms-filter: invert(100%);
+    filter: invert(100%);
+    {/block:IfInvertedTumblrButtons}
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+*::selection {background-color: {color:Text highlight background}; color: {color:Text highlight};}
+*::-moz-selection {background-color: {color:Text highlight background}; color: {color:Text highlight};}
+*::-webkit-selection {background-color: {color:Text highlight background}; color: {color:Text highlight};}
+
+html, body, p, h1, h2, h3, h4, h5, h6, blockquote {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p {margin-bottom: 10px;}
+
+body {
+    font-family: {font:Post font};
+    font-size: 10px;
+    line-height: 15px;
+    margin: 20px 0px;
+    color: {color:Post text};
+    background-color: {color:Background};
+	background-image: url('{image:Background}');
+	background-attachment: fixed;
+	overflow-y: auto;
+}
+
+b, strong {color: {color:Post bold text};}
+i, em {color: {color:Post italic text};}
+small {font-size: 8px;}
+big {font-size: 12px;}
+
+ul {text-align: justify;}
+ul, ol {margin-left: -25px;}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+blockquote {
+    padding: 3px 0 3px 10px;
+    border-left: 7px solid {color:Blockquote};
+    text-align: justify;
+}
+blockquote p {display: block!important;}
+blockquote img {
+    display: block;
+    max-width: 450px;
+	{block:If400pxPosts}max-width: 350px;{/block:If400pxPosts}
+	{block:If250pxPosts}max-width: 200px;{/block:If250pxPosts}
+	width: auto;
+	height: auto;
+}
+
+a {
+    color: {color:Post link};
+    text-decoration: none;
+    position: relative;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+a:hover {color: {color:Post link hover};}
+           
+.post {
+    width: 525px;
+    {block:If400pxPosts}width: 425px;{/block:If400pxPosts}
+    {block:If250pxPosts}width: 275px;{/block:If250pxPosts}
+    height: auto;
+    overflow: hidden;
+    background-color: {color:Post background};
+    border: solid 2px {color:Post border};
+    line-height: 18px;
+    color: {color:Post text};
+    margin-bottom: 40px;
+    padding: 3px;
+    border-radius: {text:Post border radius}px;
+    border-radius: 3px;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+
+.content {
+    padding: 10px;
+    background-color: {color:Post background};
+    border: solid 2px {color:Post border};
+}
+
+.photo, .photoset {padding: 0px;}
+
+{block:IfBlackAndWhiteImages}
+.post img, .html_photoset {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+{block:IfColorImagesOnHover}
+.post img:hover, .html_photoset:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+{/block:IfColorImagesOnHover}
+{/block:IfBlackAndWhiteImages}
+
+.title {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: {color:Post title};
+    font-family: {font:Post title font};
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.title a {color: {color:Post title link};}
+           
+.photo {margin-bottom: 5px;}
+.photo img {border: 0;}
+
+.chat span {
+    float: left;
+    margin-right: 1%;
+}
+
+.answert {
+    text-align: left;
+    line-height: 15px;
+    color: {color:Answer text};
+    background-color: {color:Answer background};
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+}
+.question {
+    margin-bottom: 0px;
+    line-height: 15px;
+    color: {color:Question text};
+}
+.askerportrait {
+    margin: 10px;
+    position: absolute;
+}
+.a {
+    margin-left: 80px;
+    min-height: 64px;
+    padding: 10px;
+}
+.asker {
+    color: {color:Asker name};
+    text-transform: uppercase;
+}
+
+.infobox {
+    position: relative;
+    margin-top: 4px;
+    width: 470px;
+    {block:If400pxPosts}width: 370px;{/block:If400pxPosts}
+    {block:If250pxPosts}width: 220px;{/block:If250pxPosts}
+    padding: 0px 20px;
+    color: {color:Post info};
+    text-transform: uppercase;
+    font-family: {font:Post info font};
+    font-family: 'PokemonGB', 'Press Start 2P' !important;
+    font-size: 7pt;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition: all 0.7s ease-in-out;
+    -o-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
+}
+.infobox a {color: {color:Post info};}
+
+.rebloglike li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.reblog-button svg path, .like-button svg path {fill: {color:Reblog and like buttons};}
+
+.like-button {position: relative;}
+.like-button .like_button {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+.like-button .like_button.liked {opacity: 0.5;}
+
+.like_button {
+    position: relative;
+    left: 0px !important;
+    top: -1px !important;
+    -ms-transform: scale(0.8, 0.9) !important;
+    -webkit-transform: scale(0.8, 0.9) !important;
+    transform: scale(0.8, 0.9) !important;
+}
+
+.tags {width: 470px;}
+.tags a {color: {color:Post info tags};}
+.tags a:hover {color: {color:Post info tags hover};}
+
+.pagenotes {
+    position: relative;
+    top: 10px;
+    vertical-align: middle;
+    background-color: {color:Post background};
+    color: {color:Post text};
+    margin-bottom: 10px;
+}
+.pagenotes img {margin-right: 5px;}
+.pagenotes ol {list-style-type: none;}
+.pagenotes li {margin-bottom: 5px;}
+
+
+#side-wrapper {
+    position: fixed;
+    top: 15%;
+    left: 10%;
+    -webkit-transition: all 0.0s ease-in-out;
+    -moz-transition: all 0.0s ease-in-out;
+    -o-transition: all 0.0s ease-in-out;
+    transition: all 0.0s ease-in-out;
+}
+
+#side-container {
+    width: 350px;
+    border: solid 2px {color:Sidebar border};
+    border-radius: 3px;
+}
+
+#battle-container {
+    position: relative;
+    width: 350px;
+    height: 198px;
+    background-image: url('{image:Custom sidebar bg}');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    opacity: 0;
+}
+
+
+
+/*  move pokemon below  */
+
+
+
+.front-poke {               /* edit pokemon in the front here */
+    position: absolute;
+    height: 100px;          /* adjust height and width for the size */
+    width: 125px;
+    top: 110px;             /* move it vertically */
+    left: 30px;             /* move it horizontally */
+    background-image: url('{image:Front pokemon}');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.back-poke {                /* edit pokemon in the back here */
+    position: absolute;
+    height: 100px;          /* adjust height and width for the size */
+    width: 125px;
+    top: 30px;              /* move it vertically */
+    left: 200px;            /* move it horizontally */
+    background-image: url('{image:Back pokemon}');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.back-poke-info {
+    height: 100px;
+    width: 150px;
+    top: 10px;
+    left: 30px;
+    background-image: url('https://static.tumblr.com/o4povtk/jYPocbw6s/th18back.png');
+}
+
+.front-poke-info {
+    height: 80px;
+    width: 152px;
+    top: 128px;
+    left: 175px;
+    background-image: url('https://static.tumblr.com/o4povtk/GrJocbw2p/th18front.png');
+}
+
+.back-poke-info, .front-poke-info {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #000000;
+    font-size: 6pt;
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.5);
+}
+
+.bp-name {
+    position: relative;
+    top: 30px;
+    left: 11px;
+}
+
+.bp-lvl {
+    position: relative;
+    top: 15px;
+    left: -24px;
+    text-align: right;
+}
+
+.fp-name {
+    position: relative;
+    top: 20px;
+    left: 23px;
+}
+
+.fp-lvl {
+    position: relative;
+    top: 5px;
+    left: -18px;
+    text-align: right;
+}
+
+.fp-health {
+    position: relative;
+    top: 16px;
+    left: -22px;
+    text-align: right;
+}
+
+.bp-bar1, .bp-bar2, .fp-bar1, .fp-bar2 {
+    position: absolute;
+    height: 9px;
+    width: 76px;
+    background-color: #506860;
+}
+
+.bp-bar1, .bp-bar2 {top: 57px; left: 80px;}
+.fp-bar1, .fp-bar2 {top: 166px; left: 235px;}
+.bp-bar2, .fp-bar2 {
+    background-color: #70F8A8;
+    -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 0px 2px 5px 0px rgba(0,0,0,0.2);
+    display: none;
+}
+
+#mlinks-container {
+    background-color: {color:Sidebar border};
+    height: 75px;
+    padding: 3px;
+}
+
+.desc-border1 {
+    height: 100%;
+    width: 100%;
+    background-color: {color:Description border 1};
+    border-radius: 10px;
+}
+
+.desc-border2 {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    padding: 5px;
+    height: 50px;
+    width: 320px;
+    background-color: {color:Description background};
+    border: solid 2px {color:Description border 2};
+    border-radius: 3px;
+}
+
+.desc {
+    color: {color:Description text};
+    font-family: {font:Description font};
+    font-size: 6pt;
+    max-width: 145px;
+    height: 50px;
+    overflow-y: auto;
+}
+.desc h1 {
+    text-transform: uppercase;
+    font-size: 9pt;
+    font-family: {font:Blog title font};
+}
+.desc::-webkit-scrollbar {
+    width: 8px;
+    background-color: {color:Description scrollbar};
+    border: solid 3px {color:Description background};
+}
+.desc::-webkit-scrollbar-thumb {
+    height: 12px;
+    border: solid 2px {color:Description background};
+    background-color: {color:Description scrollbar};
+}
+
+#menu-container {
+    position: absolute;
+    right: 0px;
+    width: 170px;
+    height: 60px;
+    padding: 5px;
+    background-color: {color:Main nav border};
+    border: solid 3px {color:Sidebar border};
+    border-radius: 5px;
+    z-index: 1;
+    -webkit-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 1px 1px 3px 0px rgba(0,0,0,0.3);
+}
+
+.menu {
+    height: 100%;
+    width: 100%;
+    background-color: {color:Main nav background};
+    border-radius: 5px;
+    -webkit-box-shadow: inset 1px 1px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 1px 1px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: inset 1px 1px 10px 0px rgba(0,0,0,0.2);
+}
+
+.mlink-container {
+    margin: 9px 0px 3px 7px;
+    width: 65px;
+    color: {color:Main nav link};
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.5);
+    text-transform: uppercase;
+    font-size: 8pt;
+    display: inline-block;
+    cursor: pointer;
+}
+.mlink-container:hover {color: {color:Main nav link hover};}
+
+.link-cursor {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    border-color: transparent transparent transparent {color:Link hover cursor};
+    line-height: 0px;
+    _border-color: #FFFFFF #FFFFFF #FFFFFF {color:Link hover cursor};
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#FFFFFF');
+    margin-right: 3px;
+    display: inline-block;
+    opacity: 0;
+}
+.link-selected .link-cursor {opacity: 1;}
+.menu:hover .link-cursor {opacity: 0;}
+.mlink-container:hover .link-cursor {opacity: 1;}
+
+#nav-container {
+    position: relative;
+    background-color: {color:Nav border};
+    border: solid 3px {color:Sidebar border};
+    border-radius: 5px;
+    padding: 5px;
+    width: 110px;
+    top: -5px;
+    left: 200px;
+    display: none;
+}
+
+.nav {
+    background-color: {color:Nav background};
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.nav-link {
+    padding: 3px 5px;
+    font-size: 6pt;
+    color: {color:Nav link};
+    text-shadow: 1px 1px 1px rgba(150, 150, 150, 0.5);
+}
+.nav-link:hover {color:{color:Nav link hover};}
+.nav-link .link-cursor {border-width: 3px 0 3px 6px;}
+.nav-link:hover .link-cursor {opacity: 1;}
+
+#content {
+    position: absolute;
+    width: 500px;
+    {block:If400pxPosts}width: 400px;{/block:If400pxPosts}
+    {block:If250pxPosts}width: 250px;{/block:If250pxPosts}
+    left: 10%;
+    margin-left: 400px;
+}
+
+.post table td .link-cursor {border-width: 4px 0 4px 6px;}
+.post table td a:hover .link-cursor {opacity: 1;}
+
+.pagination a {
+    color: {color:Pagination};
+    -webkit-transition: all 0.0s ease-in-out;
+    -moz-transition: all 0.0s ease-in-out;
+    -o-transition: all 0.0s ease-in-out;
+    transition: all 0.0s ease-in-out;
+}
+.pagination a:hover {color: {color:Pagination hover};}
+
+{CustomCSS}
+</style>
+<script>
+$(document).tooltip({
+    track: true,
+    tooltipClass: "tooltiptheme"
+});
+</script>
+</head>
+<body>
+
+<div id="side-wrapper">
+    <div id="side-container">
+        <div id="battle-container">
+            {block:IfEnableBackPokemonInfo}<div class="bp-bar1"></div><div class="bp-bar2"></div>{/block:IfEnableBackPokemonInfo}
+            <div class="back-poke"></div>
+            {block:IfEnableBackPokemonInfo}<div class="back-poke-info">
+                <div class="bp-name">{text:Back pokemon name}</div>
+                <div class="bp-lvl">Lv{text:Back pokemon level}</div>
+            </div>{/block:IfEnableBackPokemonInfo}
+            {block:IfEnableFrontPokemonInfo}<div class="fp-bar1"></div><div class="fp-bar2"></div>{/block:IfEnableFrontPokemonInfo}
+            <div class="front-poke"></div>
+            {block:IfEnableFrontPokemonInfo}<div class="front-poke-info">
+                <div class="fp-name">{text:Front pokemon name}</div>
+                <div class="fp-lvl">Lv{text:Front pokemon level}</div>
+                <div class="fp-health">{text:Front pokemon health}/ {text:Front pokemon health}</div>
+            </div>{/block:IfEnableFrontPokemonInfo}
+        </div>
+        <div id="mlinks-container">
+            <div id="menu-container"><div class="menu">
+                <a href="/"><div class="mlink-container" id="nav-home"><div class="link-cursor"></div>home</div></a>
+                <a href="/ask"><div class="mlink-container" id="nav-ask"><div class="link-cursor"></div>ask</div></a>
+                <div class="mlink-container" id="nav-link"><div class="link-cursor"></div>nav</div>
+                <a href="https://raiidens.tumblr.com/tagged/themesbyraiidens"><div class="mlink-container tooltip" title="by raiidens"><div class="link-cursor"></div>theme</div></a>
+            </div></div>
+            <div class="desc-border1"><div class="desc-border2"><div class="desc">
+                <h1>{Title}</h1>
+                {Description}
+            </div></div></div>
+        </div>
+    </div>
+    <div id="nav-container"><div class="nav">
+        {block:IfLink1Title}<a href="{text:Link 1 URL}"><div class="nav-link"><div class="link-cursor"></div>{text:Link 1 Title}</div></a>{/block:IfLink1Title}
+        {block:IfLink2Title}<a href="{text:Link 2 URL}"><div class="nav-link"><div class="link-cursor"></div>{text:Link 2 Title}</div></a>{/block:IfLink2Title}
+        {block:IfLink3Title}<a href="{text:Link 3 URL}"><div class="nav-link"><div class="link-cursor"></div>{text:Link 3 Title}</div></a>{/block:IfLink3Title}
+        {block:IfLink4Title}<a href="{text:Link 4 URL}"><div class="nav-link"><div class="link-cursor"></div>{text:Link 4 Title}</div></a>{/block:IfLink4Title}
+        {block:IfLink5Title}<a href="{text:Link 5 URL}"><div class="nav-link"><div class="link-cursor"></div>{text:Link 5 Title}</div></a>{/block:IfLink5Title}
+        {block:IfLink6Title}<a href="{text:Link 6 URL}"><div class="nav-link"><div class="link-cursor"></div>{text:Link 6 Title}</div></a>{/block:IfLink6Title}
+        {block:IfLink7Title}<a href="{text:Link 7 URL}"><div class="nav-link"><div class="link-cursor"></div>{text:Link 7 Title}</div></a>{/block:IfLink7Title}
+        {block:IfLink8Title}<a href="{text:Link 8 URL}"><div class="nav-link"><div class="link-cursor"></div>{text:Link 8 Title}</div></a>{/block:IfLink8Title}
+    </div></div>
+</div>
+
+
+
+<div id="content">
+<div id="navigation">
+{block:Pagination}
+{block:PreviousPage}<a href="{PreviousPage}">{/block:PreviousPage}{block:PreviousPage}</a>{/block:PreviousPage}
+{block:NextPage}<a href="{NextPage}" id="nextPage">{/block:NextPage}{block:NextPage}</a>{/block:NextPage}{/block:Pagination}
+</div>
+{block:Posts}  
+<div class="post" id="{PostID}"><div class="content">
+<table style="width: 500px; {block:If400pxPosts}width: 400px;{/block:If400pxPosts} {block:If250pxPosts}width: 250px;{/block:If250pxPosts}"><tr><td>{block:Date}<a href="{Permalink}" style="color:{color:Post info};"><div class="link-cursor"></div>{ShortMonth} {DayOfMonth}, {ShortYear}</a>{/block:Date}</td><td style="text-align:right;"><a href="{Permalink}" style="color:{color:Post info};"><div class="link-cursor"></div>{NoteCountWithLabel}</a></td></tr></table>
+
+{block:Text}
+<div class="text">
+    {block:Title}<h3 class="title"><a href="{Permalink}">{Title}</a></h3>{/block:Title}
+    {Body}
+</div>
+{/block:Text}
+
+{block:Photo}
+<div class="photo">
+    <img {block:If500pxPosts}src="{PhotoURL-500}" data-original="{PhotoURL-500}" width="{PhotoWidth-500}" height="{PhotoHeight-500}"{/block:If500pxPosts}{block:If400pxPosts}src="{PhotoURL-400}" data-original="{PhotoURL-400}" width="{PhotoWidth-400}" height="{PhotoHeight-400}"{/block:If400pxPosts}{block:If250pxPosts}src="{PhotoURL-250}" data-original="{PhotoURL-250}" width="{PhotoWidth-250}" height="{PhotoHeight-250}"{/block:If250pxPosts} alt="{PhotoAlt}">
+    {block:IfShowCaptions}
+            {block:Caption}
+            {Caption}
+            {/block:Caption}
+            {/block:IfShowCaptions}
+            {block:IfNotShowCaptions}
+            {block:PermalinkPage}
+            {block:Caption}
+            {Caption}
+            {/block:Caption}
+            {/block:PermalinkPage}
+            {/block:IfNotShowCaptions}
+</div>
+{/block:Photo}
+
+{block:Photoset}
+<div class="photoset">
+    {block:If500pxPosts}<div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">{block:Photos}<div class="photo-data"><div class="pxu-photo"><img src="{PhotoURL-500}" width="{PhotoWidth-500}" height="{PhotoHeight-500}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}"></div></div>{/block:Photos}</div>{/block:If500pxPosts}
+    {block:If400pxPosts}<div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">{block:Photos}<div class="photo-data"><div class="pxu-photo"><img src="{PhotoURL-400}" width="{PhotoWidth-400}" height="{PhotoHeight-400}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}"></div></div>{/block:Photos}</div>{/block:If400pxPosts}
+    {block:If250pxPosts}<div class="photo-slideshow" id="photoset_{PostID}" data-layout="{PhotosetLayout}">{block:Photos}<div class="photo-data"><div class="pxu-photo"><img src="{PhotoURL-250}" width="{PhotoWidth-250}" height="{PhotoHeight-250}" data-highres="{PhotoURL-HighRes}" data-width="{PhotoWidth-HighRes}" data-height="{PhotoHeight-HighRes}"></div></div>{/block:Photos}</div>{/block:If250pxPosts}
+    {block:IfShowCaptions}
+            {block:Caption}
+            {Caption}
+            {/block:Caption}
+            {/block:IfShowCaptions}
+            {block:IfNotShowCaptions}
+            {block:PermalinkPage}
+            {block:Caption}
+            {Caption}
+            {/block:Caption}
+            {/block:PermalinkPage}
+    {/block:IfNotShowCaptions}
+</div>
+{/block:Photoset}
+       
+       
+{block:Quote}
+<div class="quote">
+    <h3><i class="fa fa-quote-left fa-2x fa-pull-left" aria-hidden="true" style="position:relative; top:-7px;"></i>{Quote}</h3>
+    {block:Source}<span style="margin-left:2em;">— {Source}</span>{/block:Source}
+</div>
+{/block:Quote}
+
+{block:Link}
+<div class="link">
+    <h3 class="title"><a href="{URL}" {Target}>{Name}</a></h3>
+    {block:Description}{Description}{/block:Description}{Excerpt}
+    {Excerpt}
+</div>
+{/block:Link}
+
+{block:Chat}
+<div class="chat">
+    {block:Title}<h3><a href="{Permalink}">{Title}</a></h3>{/block:Title}
+        {block:Lines}{block:Label}<b>{Label}</b>{/block:Label}
+        {Line}<br>
+        {/block:Lines}
+</div>
+{/block:Chat}
+
+{block:Audio}
+<div class="audio">
+    {block:AlbumArt}<div style="float: left;"><img src="{AlbumArtURL}" data-original="{AlbumArtURL}" width="150" height="150"></div>{/block:AlbumArt}
+    <div style="position: relative; left: 10px; top: 5px">
+    {block:trackname}<div class="aline"><b>track name:</b> {trackname}</div>{/block:trackname}
+            {block:artist}<div class="aline"><b>artist:</b> {artist}</div>{/block:artist}
+            {block:album}<div class="aline"><b>album:</b> {album}</div>{/block:album}
+            {block:playcount}<div class="aline"><b>play count:</b> {playcount}</div>{/block:playcount}
+    </div>
+    <div style="clear: both;"></div>
+    {block:AudioPlayer}{AudioPlayer}{/block:AudioPlayer}
+    {block:IfShowCaptions}
+            {block:Caption}
+            {Caption}
+            {/block:Caption}
+            {/block:IfShowCaptions}
+            {block:IfNotShowCaptions}
+            {block:PermalinkPage}
+            {block:Caption}
+            {Caption}
+            {/block:Caption}
+            {/block:PermalinkPage}
+    {/block:IfNotShowCaptions}
+</div>
+{/block:Audio}
+
+{block:Video}
+<div class="video">
+    <div class="video-player">{block:If500pxPosts}{Video-500}{/block:If500pxPosts}{block:If400pxPosts}{Video-400}{/block:If400pxPosts}{block:If250pxPosts}{Video-250}{/block:If250pxPosts}</div>
+    {block:IfShowCaptions}
+            {block:Caption}
+            {Caption}
+            {/block:Caption}
+            {/block:IfShowCaptions}
+            {block:IfNotShowCaptions}
+            {block:PermalinkPage}
+            {block:Caption}
+            {Caption}
+            {/block:Caption}
+            {/block:PermalinkPage}
+            {/block:IfNotShowCaptions}
+</div>
+{/block:Video}
+
+{block:Answer}
+<div class="answer">
+    <img class="askerportrait" src="{AskerPortraitURL-64}" data-original="{AskerPortraitURL-64}">
+    <div style="color: {color:Asker name};">
+    <div class="a">
+    <b>{Asker} asks</b>: <div class="question">{Question}</div>
+    </div>
+    </div><br>
+    <div class="answert">{Answer}</div>
+</div>
+{/block:Answer}
+        
+            <table style="width: 500px; {block:If400pxPosts}width: 400px;{/block:If400pxPosts} {block:If250pxPosts}width: 250px;{/block:If250pxPosts} color:{color:Post info};"><tr><td style="width: 420px; {block:If400pxPosts}width: 320px;{/block:If400pxPosts} {block:If250pxPosts}width: 170px;{/block:If250pxPosts}">{block:IfAlwaysShowTags}{block:HasTags}Tags: {block:Tags}<span class="tags"><a href="{TagURL}">#{Tag} </a></span>{/block:Tags}{/block:HasTags}{/block:IfAlwaysShowTags}{block:IfNotAlwaysShowTags}{block:PermalinkPage}{block:HasTags}Tags: {block:Tags}<span class="tags"><a href="{TagURL}">#{Tag} </a></span>{/block:Tags}{/block:HasTags}{/block:PermalinkPage}{/block:IfNotAlwaysShowTags}</td><td style="text-align: right;">
+            
+            
+            <ul class="rebloglike">
+            <li class="like-button tooltip" title="Like">
+            {LikeButton size="14"}
+    <svg width="14" height="14" viewBox="0 0 32 32">
+        <path class="path1" d="M23.113 6c2.457 0 4.492 1.82 4.836 4.188l-11.945 13.718-11.953-13.718c0.344-2.368 2.379-4.188 4.836-4.188 2.016 0 3.855 2.164 3.855 2.164l3.258 3.461 3.258-3.461c0 0 1.84-2.164 3.855-2.164zM23.113 2c-2.984 0-5.5 1.578-7.113 3.844-1.613-2.266-4.129-3.844-7.113-3.844-4.903 0-8.887 3.992-8.887 8.891v0.734l16.008 18.375 15.992-18.375v-0.734c0-4.899-3.984-8.891-8.887-8.891v0z"></path>
+</symbol>
+    </svg>
+</li>
+            
+            <li class="reblog-button tooltip" title="Reblog">
+                <a href="{ReblogURL}"><svg width="14" height="14" viewBox="0 0 35 35">
+        <path class="path1" d="M28 24v4h-24v-20h10.071l-3.657-3.654 2.828-2.826 8.485 8.485-8.485 8.484-2.828-2.83 3.657-3.659h-6.071v12h20z"></path>
+</symbol>
+    </svg></a>
+            </li>
+            </ul>
+                
+                
+                
+            </td></tr></table>
+            </div></div>
+            
+        {block:PermalinkPage}{block:PostNotes}<div class="post pagenotes"><div class="content">{PostNotes}</div></div>{/block:PostNotes}{/block:PermaLinkPage}
+{/block:Posts}
+
+
+{block:Pagination}<div class="post pagination"><div class="content">
+    <table style="width: 500px; {block:If400pxPosts}width: 400px;{/block:If400pxPosts} {block:If250pxPosts}width: 250px;{/block:If250pxPosts}"><td>{block:PreviousPage}<a href="{PreviousPage}"><div class="link-cursor"></div>Prev</a>{/block:PreviousPage}</td><td style="text-align: right;">{block:NextPage}<a href="{NextPage}"><div class="link-cursor"></div>Next</a>{/block:NextPage}</td></table>
+</div></div>{/block:Pagination}
+
+</div>
+</div>
+
+
+</body>
+
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script>
+$(document).ready(function(){
+    
+    if (window.location.pathname == "/")
+        $("#nav-home").addClass("link-selected");
+    else if (window.location.pathname == "/ask")
+        $("#nav-ask").addClass("link-selected");
+        
+    var sidebarbg = {select:Sidebar bg};
+    if (sidebarbg == 1)
+        $("#battle-container").css("background-image", "url('https://static.tumblr.com/o4povtk/P4Goc6r5m/th18a.jpg')");
+    else if (sidebarbg == 2)
+        $("#battle-container").css("background-image", "url('https://static.tumblr.com/o4povtk/yVgocbo07/th18b.jpg')");
+    else if (sidebarbg == 3)
+        $("#battle-container").css("background-image", "url('https://static.tumblr.com/o4povtk/OO4ocbo30/th18c.jpg')");
+    else if (sidebarbg == 4)
+        $("#battle-container").css("background-image", "url('https://static.tumblr.com/o4povtk/sz9ocbo3e/th18d.jpg')");
+    else if (sidebarbg == 5)
+        $("#battle-container").css("background-image", "url('https://static.tumblr.com/o4povtk/j9Vocbo44/th18e.jpg')");
+    else if (sidebarbg == 6)
+        $("#battle-container").css("background-image", "url('https://static.tumblr.com/o4povtk/Zljocbo4c/th18f.jpg')");
+    else if (sidebarbg == 7)
+        $("#battle-container").css("background-image", "url('https://static.tumblr.com/o4povtk/QQUocbo4m/th18g.jpg')");
+    
+    $("#battle-container").css("opacity", "1");
+    
+    $('p').each(function() {
+        var text = $(this).html();
+        var regex = /\(Source:.*\)+/ig;
+        text = text.replace(regex, '');
+        regex = /\(via(.*)\)+/ig;
+        text = text.replace(regex, '');
+        $(this).html(text);
+    });
+    
+    $('.photo-slideshow').pxuPhotoset({
+       lightbox: true,
+       rounded: false,
+       gutter: '3px',
+       borderRadius: '0px',
+       photoset: '.photo-slideshow',
+       photoWrap: '.photo-data',
+       photo: '.pxu-photo'
+   });
+   
+   {block:IfEnableFrontPokemonInfo}$(".fp-bar2").toggle("blind", { direction: "left", easing: "easeOutCubic" }, 1000);{/block:IfEnableFrontPokemonInfo}
+   {block:IfEnableBackPokemonInfo}$(".bp-bar2").toggle("blind", { direction: "left", easing: "easeOutCubic" }, 1000);{/block:IfEnableBackPokemonInfo}
+   
+    
+    $("#nav-link").click(function() {
+        $("#nav-container").toggle("drop", 500);
+    });
+});
+</script>
+{block:IfLazyLoadImages}
+<script type="text/javascript" src="//static.tumblr.com/bmdsqsc/ogWm7q8w1/lazyload.js"></script>
+<script type="text/javascript">
+$("img").lazyload({
+    placeholder : "https://static.tumblr.com/twte3d7/RSvlio0k5/grey.gif",
+    {block:IfFadeInImagesOnLoad}effect: "fadeIn",{/block:IfFadeInImagesOnLoad}
+});
+</script>
+{/block:IfLazyLoadImages}
+</html>
